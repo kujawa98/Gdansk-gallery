@@ -2,7 +2,7 @@
   "name": "gallery",
   "version": "0.0.0",
   "description": "Simple gallery about special places in Gdańsk's old town",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
