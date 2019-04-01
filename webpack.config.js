@@ -2,8 +2,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
 
-  mode: 'production',
-
   entry: ['./src/js/main.js', './src/scss/main.scss'],
 
   output: {
@@ -13,6 +11,11 @@ module.exports = {
 
     filename: 'assets/main.js'
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'build'),
+    compress: true,
+    port: 9000
+  },
   module: {
     rules: [{
         test: /\.(js)$/,
@@ -20,7 +23,7 @@ module.exports = {
         use: ['babel-loader']
       },
       {
-        test: /\.(sa|sc)ss$/,
+        test: /\.scss$/,
         use: [{
             loader: MiniCssExtractPlugin.loader
           },
