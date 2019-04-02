@@ -1,0 +1,12 @@
+.c-miniatures {
+  list-style-type: none;
+  height: 300px;
+  border: 2px solid whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__miniature {
+    flex-basis: 30%;
+  }
+}
