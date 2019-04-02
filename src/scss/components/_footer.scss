@@ -1,0 +1,12 @@
+.c-footer {
+  &__text {
+    font-size: 1.2rem;
+    margin: 1.2em 0;
+  }
+
+  @media screen and (min-width:20rem) {
+    &__text {
+      @include lock(1.2, 1.5, 20, 70);
+    }
+  }
+}

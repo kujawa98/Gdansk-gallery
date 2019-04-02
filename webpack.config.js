@@ -7,8 +7,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
 
-    publicPath: '/assets',
-
     filename: 'assets/main.js'
   },
   devServer: {

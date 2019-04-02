@@ -1,0 +1,3 @@
+@mixin lock($minFontSize, $maxFontSize, $minScreenSize, $maxScreenSize) {
+  font-size: calc(#{$minFontSize}rem + (#{$maxFontSize} - #{$minFontSize})* (100vw - #{$minScreenSize}rem)/(#{$maxScreenSize} - #{$minScreenSize}));
+}
