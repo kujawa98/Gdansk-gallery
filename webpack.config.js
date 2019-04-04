@@ -20,13 +20,7 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader']
       },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {},
-        }, ],
-      },
+
       {
         test: /\.scss$/,
         use: [{
@@ -45,6 +39,18 @@ module.exports = {
             loader: 'sass-loader'
           }
         ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            publicPath: './images',
+            name: '[name].[ext]',
+            outputPath: 'assets/images'
+          }
+
+        }, ],
       }
     ]
   },
