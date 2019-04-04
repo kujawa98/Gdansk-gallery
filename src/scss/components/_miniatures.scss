@@ -8,7 +8,7 @@
   flex-direction: column;
 
   &__miniature {
-    flex-basis: 6%;
+    flex-basis: 5%;
     width: 70%;
     background-color: #dadada;
     background-image: url('../images/flower.jpg');
@@ -16,8 +16,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-radius: 5px;
-
+    border-radius: 15px;
+    transition: 1s;
   }
 
   &__link {
@@ -30,6 +30,7 @@
     outline: 10px dotted #fff;
 
   }
+
 
   // @media screen and (min-width:30rem) {
   //   &__miniature {
