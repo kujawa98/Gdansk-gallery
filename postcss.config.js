@@ -5,6 +5,7 @@ module.exports = {
     postcssPresetEnv({
       browsers: ['> 1%']
     }),
-    require('cssnano')
+    require('cssnano'),
+    require('autoprefixer')
   ]
 };
