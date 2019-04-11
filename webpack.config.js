@@ -14,6 +14,7 @@ module.exports = {
     compress: true,
     port: 9000
   },
+  devtool: 'sourcemap',
   module: {
     rules: [{
         test: /\.(js)$/,

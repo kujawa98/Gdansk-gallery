@@ -8,107 +8,99 @@
   <meta name="author" content="Kacper Kujawa" lang="pl">
   <meta name="description" content="Check out more or less known places in Gdańsk's old town">
   <link rel="stylesheet" href="assets/main.css">
+  <script src="assets/main.js" async></script>
   <title>Beauty of Gdańsk</title>
   <!-- Favicon and OG tags -->
 </head>
 
+<!-- 
+  - w orientacji wertykalnej do 70rem układ menu column
+  -powyżej 70rem układ menu row bez względu na orientację
+  -w orientacji horyzontalnej układ menu row zawsze
+  -ustalić minimalne wymiary na miniaturkę
+-->
+
+
 <body>
+  <!-- TODO: add display flex on wrap and main-content -->
   <div class="wrap">
     <header id="header" class="c-header">
       <h1 class="c-header__title">Gdańsk</h1>
       <p class="c-header__description">Check out before you leave</p>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="l-main-content">
 
-      <nav id="main-menu">
+      <nav id="main-menu" class="l-main-menu">
         <ul class="c-miniatures">
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link">Brama wyżynna</a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link">Bazylika Mariacka</a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link">Neputn</a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link">Dwór Artusa</a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link">Forum</a></li>
-          <!-- <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link"></a></li> -->
-          <!-- <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link"></a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link"></a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link"></a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link"></a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link"></a></li>
-          <li class="c-miniatures__miniature"><a href="#" class="c-miniatures__link"></a></li> -->
+          <li class="c-miniatures__miniature"><a href="#brama" class="c-miniatures__link">Brama wyżynna</a></li>
+          <li class="c-miniatures__miniature"><a href="#bazylika" class="c-miniatures__link">Bazylika Mariacka</a></li>
+          <li class="c-miniatures__miniature"><a href="#neptun" class="c-miniatures__link">Neptun</a></li>
+          <li class="c-miniatures__miniature"><a href="#artus" class="c-miniatures__link">Dwór Artusa</a></li>
+          <li class="c-miniatures__miniature"><a href="#forum" class="c-miniatures__link">Forum</a></li>
         </ul>
       </nav>
 
 
 
 
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-      <article class="c-relic">
-        <img src="" alt="" class="c-relic__image">
-        <h2 class="c-relic__name">Kek</h2>
-        <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
-          dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus minima
-          atque voluptatibus non.</p>
-      </article>
-
-
-
-
-
+      <div class="l-relics">
+        <article id="brama" class="c-relic">
+          <img src="" alt="" class="c-relic__image">
+          <h2 class="c-relic__name">Brama wyżynna</h2>
+          <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.</p>
+        </article>
+        <article id="bazylika" class="c-relic">
+          <img src="" alt="" class="c-relic__image">
+          <h2 class="c-relic__name">Bazylika Mariacka</h2>
+          <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.</p>
+        </article>
+        <article id="neptun" class="c-relic">
+          <img src="" alt="" class="c-relic__image">
+          <h2 class="c-relic__name">Neptun</h2>
+          <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.</p>
+        </article>
+        <article id="artus" class="c-relic">
+          <img src="" alt="" class="c-relic__image">
+          <h2 class="c-relic__name">Dwór Artusa</h2>
+          <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.</p>
+        </article>
+        <article id="forum" class="c-relic">
+          <img src="" alt="" class="c-relic__image">
+          <h2 class="c-relic__name">Forum Gdańsk</h2>
+          <p class="c-relic__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis animi iure
+            dolores fugiat corporis vitae, sequi amet neque non ducimus nemo inventore delectus! Cum necessitatibus
+            minima
+            atque voluptatibus non.</p>
+        </article>
+      </div>
 
     </main>
 
@@ -118,7 +110,7 @@
   </div>
 
 
-  <script src="assets/main.js"></script>
+
 </body>
 
 </html>
