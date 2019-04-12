@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "start": "npx webpack-dev-server"
+    "start": "npx webpack-dev-server",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d build"
   },
   "repository": {
     "type": "git",
