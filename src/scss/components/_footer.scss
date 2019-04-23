@@ -1,4 +1,8 @@
 .c-footer {
+  animation: headerintro .9s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+
   &__text {
     font-size: 1.2rem;
     margin: 1.2em 0;
